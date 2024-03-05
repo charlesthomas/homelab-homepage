@@ -1,0 +1,30 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: homepage
+
+commonAnnotations:
+  repo: https://github.com/charlesthomas/homelab-homepage
+commonLabels:
+  app: homepage
+
+resources:
+- resources/configmaps.yaml
+- resources/deployments.yaml
+- resources/ingresses.yaml
+- resources/namespaces.yaml
+- resources/rbac.yaml
+- resources/secrets.yaml
+- resources/service-accounts.yaml
+- resources/services.yaml
+patches:
+- patch: |-
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: all
+      namespace: homepage
+      annotations:
+        reloader.stakater.com/auto: "true"
+  target:
+    kind: Deployment

@@ -1,0 +1,23 @@
+_commit: v1.6.12-3-g65b95a8
+_src_path: /home/crthomas/code/charlesthomas/homelab-template
+additionalResources: ''
+backups: false
+helm: false
+ingress: false
+labels: 'app: homepage'
+name: homepage
+namespace: homepage
+pvc: false
+reloader: true
+resources:
+- configmaps.yaml
+- deployments.yaml
+- ingresses.yaml
+- rbac.yaml
+- secrets.yaml
+- service-accounts.yaml
+- services.yaml
+service: false
+serviceAccount: false
+upstreamURL: https://gethomepage.dev/
+url: https://github.com/charlesthomas/homelab-homepage
