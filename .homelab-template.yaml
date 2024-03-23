@@ -1,8 +1,11 @@
-_commit: v1.6.12-3-g65b95a8
+_commit: v1.8.1
 _src_path: /home/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
 helm: false
+homepageEnabled: true
+ingHost: homepage.crt.house
+ingName: homepage
 ingress: false
 labels: 'app: homepage'
 name: homepage

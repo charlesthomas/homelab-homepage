@@ -28,3 +28,19 @@ patches:
         reloader.stakater.com/auto: "true"
   target:
     kind: Deployment
+- patch: |-
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      name: homepage
+      namespace: homepage
+      annotations:
+        gethomepage.dev/href: https://homepage.crt.house
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/description: 
+        gethomepage.dev/group: 
+        gethomepage.dev/icon: homepage
+        gethomepage.dev/name: homepage
+        gethomepage.dev/pod-selector: ""
+  target:
+    kind: Ingress
