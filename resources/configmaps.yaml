@@ -8,8 +8,9 @@ data:
   kubernetes.yaml: |-
     mode: cluster
   settings.yaml: |-
-    title: dash.crt.house
     startUrl: https://dash.crt.house
+    target: _self
+    title: dash.crt.house
   bookmarks.yaml: ""
   custom.css: ""
   custom.js: ""
