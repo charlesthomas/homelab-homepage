@@ -85,8 +85,8 @@ spec:
           configMap:
             name: settings
         - name: bookmarks
-          configMap:
-            name: bookmarks
+          secret:
+            secretName: bookmarks
         - name: custom-css
           configMap:
             name: custom-css

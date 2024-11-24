@@ -22,14 +22,6 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: bookmarks
-  namespace: homepage
-data:
-  bookmarks.yaml: ""
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
   name: custom-css
   namespace: homepage
 data:

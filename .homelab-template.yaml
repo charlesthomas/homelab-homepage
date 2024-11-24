@@ -13,6 +13,7 @@ reloader: true
 resources:
 - configmaps.yaml
 - deployments.yaml
+- external-secrets.yaml
 - ingresses.yaml
 - rbac.yaml
 - secrets.yaml
