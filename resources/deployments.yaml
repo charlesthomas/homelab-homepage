@@ -35,8 +35,6 @@ spec:
         resources:
           limits:
             memory: 700Mi
-          requests:
-            memory: 350Mi
         readinessProbe:
           httpGet:
             path: /
