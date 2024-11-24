@@ -51,13 +51,56 @@ spec:
             periodSeconds: 20
             timeoutSeconds: 5
           volumeMounts:
-            - name: config
-              mountPath: /config
+            - name: kubernetes
+              mountPath: /config/kubernetes.yaml
+              subPath: kubernetes.yaml
+            - name: settings
+              mountPath: /config/settings.yaml
+              subPath: settings.yaml
+            - name: bookmarks
+              mountPath: /config/bookmarks.yaml
+              subPath: bookmarks.yaml
+            - name: custom-css
+              mountPath: /config/custom.css
+              subPath: custom.css
+            - name: custom-js
+              mountPath: /config/custom.js
+              subPath: custom.js
+            - name: docker
+              mountPath: /config/docker.yaml
+              subPath: docker.yaml
+            - name: services
+              mountPath: /config/services.yaml
+              subPath: services.yaml
+            - name: widgets
+              mountPath: /config/widgets.yaml
+              subPath: widgets.yaml
             - name: logs
               mountPath: /config/logs
       volumes:
-        - name: config
+        - name: kubernetes
           configMap:
-            name: homepage
+            name: kubernetes
+        - name: settings
+          configMap:
+            name: settings
+        - name: bookmarks
+          configMap:
+            name: bookmarks
+        - name: custom-css
+          configMap:
+            name: custom-css
+        - name: custom-js
+          configMap:
+            name: custom-js
+        - name: docker
+          configMap:
+            name: docker
+        - name: services
+          configMap:
+            name: services
+        - name: widgets
+          configMap:
+            name: widgets
         - name: logs
           emptyDir: {}

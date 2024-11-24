@@ -2,18 +2,67 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: homepage
+  name: kubernetes
   namespace: homepage
 data:
   kubernetes.yaml: |-
     mode: cluster
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: settings
+  namespace: homepage
+data:
   settings.yaml: |-
     startUrl: https://dash.crt.house
     target: _self
     title: dash.crt.house
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bookmarks
+  namespace: homepage
+data:
   bookmarks.yaml: ""
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: custom-css
+  namespace: homepage
+data:
   custom.css: ""
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: custom-js
+  namespace: homepage
+data:
   custom.js: ""
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: docker
+  namespace: homepage
+data:
   docker.yaml: ""
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: services
+  namespace: homepage
+data:
   services.yaml: ""
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: widgets
+  namespace: homepage
+data:
   widgets.yaml: ""
