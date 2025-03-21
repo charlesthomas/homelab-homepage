@@ -32,6 +32,8 @@ spec:
               value: "America/Detroit"
             - name: UMASK
               value: "022"
+            - name: HOMEPAGE_ALLOWED_HOSTS
+              value: dash.crt.house
           resources:
             limits:
               memory: 700Mi
