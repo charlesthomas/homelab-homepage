@@ -18,6 +18,18 @@ data:
     startUrl: https://dash.crt.house
     target: _self
     title: dash.crt.house
+    layout:
+      Media:
+        style: row
+        columns: 3
+      Kubernetes:
+        style: column
+      Tools:
+        style: column
+      Web:
+        style: column
+      "Home Automation":
+        style: column
 ---
 apiVersion: v1
 kind: ConfigMap
