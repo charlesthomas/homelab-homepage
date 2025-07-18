@@ -71,6 +71,9 @@ spec:
             - name: docker
               mountPath: /config/docker.yaml
               subPath: docker.yaml
+            - name: proxmox
+              mountPath: /config/proxmox.yaml
+              subPath: proxmox.yaml
             - name: services
               mountPath: /config/services.yaml
               subPath: services.yaml
@@ -98,6 +101,9 @@ spec:
         - name: docker
           configMap:
             name: docker
+        - name: proxmox
+          configMap:
+            name: proxmox
         - name: services
           configMap:
             name: services

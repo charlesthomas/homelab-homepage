@@ -70,3 +70,12 @@ metadata:
   namespace: homepage
 data:
   widgets.yaml: ""
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: proxmox
+  namespace: homepage
+data:
+  proxmox.yaml: ""
+
