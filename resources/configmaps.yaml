@@ -22,14 +22,25 @@ data:
       Media:
         style: row
         columns: 3
-      Kubernetes:
-        style: column
-      Tools:
-        style: column
-      Web:
-        style: column
-      "Home Automation":
-        style: column
+      "Media Management":
+        style: row
+        columns: 3
+      Column1:
+        header: false
+        Kubernetes:
+          style: column
+      Column2:
+        header: false
+        "Home Automation":
+          style: column
+        Tools:
+          style: column
+      Column3:
+        header: false
+        PiHole:
+          style: column
+        Web:
+          style: column
 ---
 apiVersion: v1
 kind: ConfigMap
