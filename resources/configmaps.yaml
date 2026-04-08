@@ -27,13 +27,13 @@ data:
         columns: 3
       Column1:
         header: false
-        Kubernetes:
+        Tools:
+          style: column
+        "Home Automation":
           style: column
       Column2:
         header: false
-        "Home Automation":
-          style: column
-        Tools:
+        Kubernetes:
           style: column
       Column3:
         header: false
