@@ -33,7 +33,7 @@ spec:
             - name: UMASK
               value: "022"
             - name: HOMEPAGE_ALLOWED_HOSTS
-              value: dash.crt.house
+              value: "*"
           resources:
             limits:
               memory: 700Mi
