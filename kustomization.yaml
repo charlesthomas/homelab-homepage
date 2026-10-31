@@ -5,8 +5,10 @@ namespace: homepage
 
 commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-homepage
-commonLabels:
-  app: homepage
+labels:
+- includeSelectors: true
+  pairs:
+    app: homepage
 
 resources:
 - resources/configmaps.yaml
